@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canadian Cardinal Eyewear | Premium Sunglasses & Optical Frames</title>
+  <meta name="description" content="Discover Canadian Cardinal—premium sunglasses and optical frames with timeless design and dependable quality. Explore our catalog and contact us for inquiries.">
+  <meta property="og:title" content="Canadian Cardinal Eyewear">
+  <meta property="og:description" content="Premium sunglasses and optical frames—timeless design, reliable quality.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/favicon-512.png">
+  <meta name="robots" content="index, follow">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Canadian Cardinal Eyewear",
+    "url": "",
+    "logo": "assets/images/favicon-512.png",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- Header -->
+  <header class="bg-white sticky top-0 z-40 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logo-red-round.png" alt="Canadian Cardinal" class="header-logo">
+        <div class="font-semibold tracking-wide js-brand-name">Canadian Cardinal</div>
+      </div>
+      <nav class="hidden sm:flex items-center gap-5 text-sm">
+        <a href="#products" class="hover:opacity-70">Products</a>
+        <a href="#about" class="hover:opacity-70">About</a>
+        <a href="#contact" class="hover:opacity-70">Contact</a>
+        <a id="catalog-link" href="#" class="inline-flex items-center gap-2 rounded-full px-3 py-1 btn-brand text-xs">Download Catalog</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-4 pt-10 pb-6">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-bold leading-tight"><span class="js-brand-name">Canadian Cardinal</span> Eyewear</h1>
+        <p class="mt-4 text-slate-600">Timeless design. Reliable quality. Focused collections of sunglasses and optical frames for international buyers.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#products" class="rounded-full px-5 py-3 btn-brand">Browse Products</a>
+          <a id="catalog-link" href="#" class="rounded-full px-5 py-3 btn-outline-brand border">Download Catalog</a>
+        </div>
+      </div>
+      <div class="rounded-3xl overflow-hidden shadow hero-grad grid place-items-center min-h-[280px]">
+        <img src="assets/images/logo-white-round.png" alt="Brand Logo" class="w-40 h-40">
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section id="products" class="max-w-6xl mx-auto px-4 py-6">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+      <div>
+        <h2 class="text-2xl font-semibold">Products</h2>
+        <p class="text-slate-500 text-sm mt-1">Catalog-only website. Click a product to view. Use “Request Quote” to contact our team.</p>
+      </div>
+      <div class="flex flex-wrap gap-3 items-center">
+        <select id="filter-category" class="px-3 py-2 rounded-xl bg-white border"></select>
+        <select id="filter-shape" class="px-3 py-2 rounded-xl bg-white border"></select>
+        <select id="filter-material" class="px-3 py-2 rounded-xl bg-white border"></select>
+        <input id="search" class="px-3 py-2 rounded-xl bg-white border" placeholder="Search (name, SKU, material)…">
+      </div>
+    </div>
+
+    <div id="product-grid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-6xl mx-auto px-4 py-10">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-2xl font-semibold">About <span class="js-brand-name">Canadian Cardinal</span></h2>
+        <p class="mt-3 text-slate-600">Canadian Cardinal is a dedicated eyewear brand offering a focused collection of sunglasses and optical frames. Designed for international buyers who value clean aesthetics and everyday reliability, our products combine consistent quality, comfortable fit, and enduring style.</p>
+        <ul class="mt-4 text-slate-700 list-disc pl-5">
+          <li>UV400 and optional polarized lenses</li>
+          <li>Acetate and stainless-steel frames</li>
+          <li>Balanced fit and controlled finish process</li>
+        </ul>
+      </div>
+      <div class="rounded-3xl overflow-hidden shadow bg-white grid place-items-center p-6">
+        <img src="assets/images/logo-red-round.png" alt="Logo" class="w-40 h-40">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-10">
+      <div class="rounded-3xl border bg-white p-6 md:p-10">
+        <h2 class="text-2xl font-semibold">Contact</h2>
+        <p class="mt-2 text-slate-600">For product sheets, pricing, or distribution opportunities, please reach out.</p>
+        <div class="mt-6 grid md:grid-cols-3 gap-4">
+          <a href="mailto:info@canadiancardinal.com" class="rounded-2xl border p-4 hover:bg-slate-50">Email: info@canadiancardinal.com</a>
+          <a id="insta" class="rounded-2xl border p-4 hover:bg-slate-50 hidden" target="_blank" rel="noopener">Instagram</a>
+          <a id="li" class="rounded-2xl border p-4 hover:bg-slate-50 hidden" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-slate-500 py-8">
+    <div class="flex items-center justify-center gap-3">
+      <img src="assets/images/logo-red-round.png" alt="CC" class="w-6 h-6 rounded-full">
+      © <span class="js-brand-name">Canadian Cardinal</span> — Catalog-only website (no e-commerce)
+    </div>
+  </footer>
+
+  <!-- Image Modal -->
+  <div id="modal" class="modal-backdrop">
+    <div class="modal">
+      <div class="flex items-center justify-between px-3 py-2 border-b">
+        <div class="text-sm text-slate-500">Image</div>
+        <div class="flex items-center gap-2">
+          <button id="modal-prev" class="px-3 py-1">‹</button>
+          <button id="modal-next" class="px-3 py-1">›</button>
+          <button id="modal-close" class="px-3 py-1">✕</button>
+        </div>
+      </div>
+      <img id="modal-image" src="" alt="Preview">
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
