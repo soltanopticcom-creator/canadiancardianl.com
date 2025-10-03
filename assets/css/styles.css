@@ -1,0 +1,21 @@
+
+:root{ --brand:#e15455; --brand-dark:#a82a2a; --muted:#6b7280; }
+html { scroll-behavior: smooth; }
+.cc-badge { letter-spacing: .08em; }
+.modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.6); display:none; align-items:center; justify-content:center; z-index:50; }
+.modal-backdrop.active { display:flex; }
+.modal { background:white; border-radius: .75rem; max-width: 90vw; max-height: 90vh; overflow: hidden; }
+.modal img { max-width: 90vw; max-height: 80vh; display: block; }
+
+.product-card:hover { transform: translateY(-2px); transition: .2s ease; }
+
+/* Brand theme */
+.btn-brand { background: var(--brand); color: #fff; }
+.btn-brand:hover { filter: brightness(0.95); }
+.btn-outline-brand { border-color: var(--brand); color: var(--brand); }
+.btn-outline-brand:hover { background: var(--brand); color:#fff; }
+.badge-brand { background: var(--brand); color:#fff; }
+.link-brand { color: var(--brand); }
+.link-brand:hover { color: var(--brand-dark); }
+.header-logo { width: 40px; height: 40px; border-radius: 9999px; overflow: hidden; }
+.hero-grad { background: radial-gradient(1200px 600px at 20% 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 41%), linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%); }
