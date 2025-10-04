@@ -8,13 +8,13 @@
   <meta property="og:title" content="Canadian Cardinal Eyewear">
   <meta property="og:description" content="Premium sunglasses and optical frames—timeless design, reliable quality.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/favicon-512.png">
+  <meta property="og:image" content="images/favicon-512.png">
   <meta name="robots" content="index, follow">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
 
   <script type="application/ld+json">
   {
@@ -22,7 +22,7 @@
     "@type": "Organization",
     "name": "Canadian Cardinal Eyewear",
     "url": "",
-    "logo": "assets/images/favicon-512.png",
+    "logo": "images/favicon-512.png",
     "sameAs": []
   }
   </script>
@@ -32,7 +32,7 @@
   <header class="bg-white sticky top-0 z-40 shadow-sm">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <img src="assets/images/logo-red-round.png" alt="Canadian Cardinal" class="header-logo">
+        <img src="images/logo-red-round.png" alt="Canadian Cardinal" class="header-logo">
         <div class="font-semibold tracking-wide js-brand-name">Canadian Cardinal</div>
       </div>
       <nav class="hidden sm:flex items-center gap-5 text-sm">
@@ -56,70 +56,69 @@
         </div>
       </div>
       <div class="rounded-3xl overflow-hidden shadow hero-grad grid place-items-center min-h-[280px]">
-        <img src="assets/images/logo-white-round.png" alt="Brand Logo" class="w-40 h-40">
+        <img src="images/logo-white-round.png" alt="Brand Logo" class="w-40 h-40">
       </div>
     </div>
   </section>
 
   <!-- Filters -->
-<section id="products" class="max-w-6xl mx-auto px-4 py-6">
-  <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-    <div>
-      <h2 class="text-2xl font-semibold">Products</h2>
-      <p class="text-slate-500 text-sm mt-1">Catalog-only website. Click a product to view. Use “Request Quote” to contact our team.</p>
+  <section id="products" class="max-w-6xl mx-auto px-4 py-6">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+      <div>
+        <h2 class="text-2xl font-semibold">Products</h2>
+        <p class="text-slate-500 text-sm mt-1">Catalog-only website. Click a product to view. Use “Request Quote” to contact our team.</p>
+      </div>
+      <div class="flex flex-wrap gap-3 items-center">
+        <select id="filter-category" class="px-3 py-2 rounded-xl bg-white border"></select>
+        <select id="filter-shape" class="px-3 py-2 rounded-xl bg-white border"></select>
+        <select id="filter-material" class="px-3 py-2 rounded-xl bg-white border"></select>
+        <input id="search" class="px-3 py-2 rounded-xl bg-white border" placeholder="Search (name, SKU, material)…">
+      </div>
     </div>
-    <div class="flex flex-wrap gap-3 items-center">
-      <select id="filter-category" class="px-3 py-2 rounded-xl bg-white border"></select>
-      <select id="filter-shape" class="px-3 py-2 rounded-xl bg-white border"></select>
-      <select id="filter-material" class="px-3 py-2 rounded-xl bg-white border"></select>
-      <input id="search" class="px-3 py-2 rounded-xl bg-white border" placeholder="Search (name, SKU, material)…">
+
+    <!-- Product Grid -->
+    <div id="product-grid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <!-- Product Card: Canadian Cardinal — Cat-Eye Black / Brown -->
+      <a href="products/canadian-cardinal-cat-eye-black-brown.html"
+         class="block rounded-2xl overflow-hidden border bg-white hover:shadow transition">
+        <img
+          src="images/products/canadian-cardinal/cat-eye-black-brown/canadian-cardinal_cat-eye-black-brown_scene-01.jpg"
+          alt="Canadian Cardinal cat-eye — black acetate with brown lenses, studio gradient backdrop"
+          class="w-full aspect-square object-cover" />
+        <div class="p-3">
+          <div class="text-xs uppercase tracking-wide text-slate-500">Canadian Cardinal</div>
+          <div class="font-semibold mt-0.5">Cat-Eye — Black / Brown Lens</div>
+          <div class="text-xs text-slate-500 mt-1">Acetate · UV400 · Precision hinge</div>
+        </div>
+      </a>
+
+      <!-- کارت‌های بعدی محصولات را اینجا اضافه کن -->
+
     </div>
-  </div>
-
-  <!-- این قسمت قبلاً خالی بود؛ الان کارت محصول اضافه شده -->
-<div id="product-grid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-
-  <!-- Product Card: Canadian Cardinal — Cat-Eye Black / Brown -->
-  <a href="products/canadian-cardinal-cat-eye-black-brown.html"
-     class="block rounded-2xl overflow-hidden border bg-white hover:shadow transition">
-    <img
-      src="images/products/canadian-cardinal/cat-eye-black-brown/canadian-cardinal_cat-eye-black-brown_scene-01.jpg"
-      alt="Canadian Cardinal cat-eye — black acetate with brown lenses, studio gradient backdrop"
-      class="w-full aspect-square object-cover" />
-    <div class="p-3">
-      <div class="text-xs uppercase tracking-wide text-slate-500">Canadian Cardinal</div>
-      <div class="font-semibold mt-0.5">Cat-Eye — Black / Brown Lens</div>
-      <div class="text-xs text-slate-500 mt-1">Acetate · UV400 · Precision hinge</div>
-    </div>
-  </a>
-
-    <!-- کارت‌های بعدی محصولات را همین‌جا اضافه کن -->
-
-  </div>
-</section>
-
+  </section>
 
   <!-- About -->
   <section id="about" class="max-w-6xl mx-auto px-4 py-10">
     <div class="grid md:grid-cols-2 gap-10 items-center">
       <div>
- <h2 class="text-2xl font-semibold">About <span class="js-brand-name">Canadian Cardinal</span></h2>
-<p class="mt-3 text-slate-600">
-Canadian Cardinal is an independent eyewear label based in Montréal, Quebec. We design focused collections of sunglasses and optical frames for international buyers and distributors. Our frames blend clean lines, everyday comfort, and reliable build quality—made to perform in daily use without shouting for attention.
-</p>
-<p class="mt-3 text-slate-600">
-From our studio in <strong>Griffintown, Montréal</strong>, we work directly with partners worldwide to deliver curated assortments, consistent QC, and responsive communication. Materials and finishes are selected with care, balancing weight, durability, and a smooth wearing experience.
-</p>
-<ul class="mt-4 text-slate-700 list-disc pl-5">
-  <li>UV400 and optional polarized lenses</li>
-  <li>Acetate and stainless-steel (or titanium) constructions</li>
-  <li>Consistent fit testing across core sizes</li>
-  <li>Controlled color and finish standards</li>
-  <li>MOQ-friendly production windows for B2B</li>
-</ul>
+        <h2 class="text-2xl font-semibold">About <span class="js-brand-name">Canadian Cardinal</span></h2>
+        <p class="mt-3 text-slate-600">
+          Canadian Cardinal is an independent eyewear label based in Montréal, Quebec. We design focused collections of sunglasses and optical frames for international buyers and distributors. Our frames blend clean lines, everyday comfort, and reliable build quality—made to perform in daily use without shouting for attention.
+        </p>
+        <p class="mt-3 text-slate-600">
+          From our studio in <strong>Griffintown, Montréal</strong>, we work directly with partners worldwide to deliver curated assortments, consistent QC, and responsive communication. Materials and finishes are selected with care, balancing weight, durability, and a smooth wearing experience.
+        </p>
+        <ul class="mt-4 text-slate-700 list-disc pl-5">
+          <li>UV400 and optional polarized lenses</li>
+          <li>Acetate and stainless-steel (or titanium) constructions</li>
+          <li>Consistent fit testing across core sizes</li>
+          <li>Controlled color and finish standards</li>
+          <li>MOQ-friendly production windows for B2B</li>
+        </ul>
       </div>
       <div class="rounded-3xl overflow-hidden shadow bg-white grid place-items-center p-6">
-        <img src="assets/images/logo-red-round.png" alt="Logo" class="w-40 h-40">
+        <img src="images/logo-red-round.png" alt="Logo" class="w-40 h-40">
       </div>
     </div>
   </section>
@@ -141,7 +140,7 @@ From our studio in <strong>Griffintown, Montréal</strong>, we work directly wit
   <!-- Footer -->
   <footer class="text-center text-sm text-slate-500 py-8">
     <div class="flex items-center justify-center gap-3">
-      <img src="assets/images/logo-red-round.png" alt="CC" class="w-6 h-6 rounded-full">
+      <img src="images/logo-red-round.png" alt="CC" class="w-6 h-6 rounded-full">
       © <span class="js-brand-name">Canadian Cardinal</span> — Catalog-only website (no e-commerce)
     </div>
   </footer>
@@ -161,6 +160,6 @@ From our studio in <strong>Griffintown, Montréal</strong>, we work directly wit
     </div>
   </div>
 
-  <script src="assets/js/app.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
