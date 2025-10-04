@@ -14,6 +14,11 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+env:
+  # اگر سایتت از ریشهٔ ریپو سرو می‌شود: "."
+  # اگر سایت داخل زیرپوشه canadian-cardinal-site-with-logo است: "canadian-cardinal-site-with-logo"
+  SITE_DIR: "."
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,16 +26,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Pages
+      - name: Debug — show tree
+        run: |
+          echo "Repo root:"
+          ls -la
+          echo "-----"
+          echo "SITE_DIR=${{ env.SITE_DIR }}"
+          ls -la "${{ env.SITE_DIR }}"
+          echo "-----"
+          echo "Products dir (if exists):"
+          ls -la "${{ env.SITE_DIR }}/products" || true
+          echo "Images dir (if exists):"
+          ls -la "${{ env.SITE_DIR }}/images" || true
+
+      - name: Configure Pages
         uses: actions/configure-pages@v5
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # اگر سایت در ریشه است: "./"
-          # اگر سایت در پوشه canadian-cardinal-site-with-logo است:
-          # path: ./canadian-cardinal-site-with-logo
-          path: ./
+          path: ${{ env.SITE_DIR }}
 
   deploy:
     environment:
