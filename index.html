@@ -62,22 +62,42 @@
   </section>
 
   <!-- Filters -->
-  <section id="products" class="max-w-6xl mx-auto px-4 py-6">
-    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-      <div>
-        <h2 class="text-2xl font-semibold">Products</h2>
-        <p class="text-slate-500 text-sm mt-1">Catalog-only website. Click a product to view. Use “Request Quote” to contact our team.</p>
-      </div>
-      <div class="flex flex-wrap gap-3 items-center">
-        <select id="filter-category" class="px-3 py-2 rounded-xl bg-white border"></select>
-        <select id="filter-shape" class="px-3 py-2 rounded-xl bg-white border"></select>
-        <select id="filter-material" class="px-3 py-2 rounded-xl bg-white border"></select>
-        <input id="search" class="px-3 py-2 rounded-xl bg-white border" placeholder="Search (name, SKU, material)…">
-      </div>
+<section id="products" class="max-w-6xl mx-auto px-4 py-6">
+  <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+    <div>
+      <h2 class="text-2xl font-semibold">Products</h2>
+      <p class="text-slate-500 text-sm mt-1">Catalog-only website. Click a product to view. Use “Request Quote” to contact our team.</p>
     </div>
+    <div class="flex flex-wrap gap-3 items-center">
+      <select id="filter-category" class="px-3 py-2 rounded-xl bg-white border"></select>
+      <select id="filter-shape" class="px-3 py-2 rounded-xl bg-white border"></select>
+      <select id="filter-material" class="px-3 py-2 rounded-xl bg-white border"></select>
+      <input id="search" class="px-3 py-2 rounded-xl bg-white border" placeholder="Search (name, SKU, material)…">
+    </div>
+  </div>
 
-    <div id="product-grid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
-  </section>
+  <!-- این قسمت قبلاً خالی بود؛ الان کارت محصول اضافه شده -->
+  <div id="product-grid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+    <!-- Product Card: Canadian Cardinal — Cat-Eye Black / Brown -->
+    <a href="products/canadian-cardinal-cat-eye-black-brown.html"
+       class="block rounded-2xl overflow-hidden border bg-white hover:shadow transition">
+      <img
+        src="images/products/canadian-cardinal/cat-eye-black-brown/canadian-cardinal_cat-eye-black-brown_scene-01.jpg"
+        alt="Canadian Cardinal cat-eye — black acetate with brown lenses, studio gradient backdrop"
+        class="w-full aspect-square object-cover" />
+      <div class="p-3">
+        <div class="text-xs uppercase tracking-wide text-slate-500">Canadian Cardinal</div>
+        <div class="font-semibold mt-0.5">Cat-Eye — Black / Brown Lens</div>
+        <div class="text-xs text-slate-500 mt-1">Acetate · UV400 · Precision hinge</div>
+      </div>
+    </a>
+
+    <!-- کارت‌های بعدی محصولات را همین‌جا اضافه کن -->
+
+  </div>
+</section>
+
 
   <!-- About -->
   <section id="about" class="max-w-6xl mx-auto px-4 py-10">
@@ -144,7 +164,3 @@ From our studio in <strong>Griffintown, Montréal</strong>, we work directly wit
   <script src="assets/js/app.js"></script>
 </body>
 </html>
-<a href="/products/canadian-cardinal-cat-eye-black-brown.html" title="Canadian Cardinal — Cat-Eye Black / Brown">
-  <img src="/images/products/canadian-cardinal/cat-eye-black-brown/canadian-cardinal_cat-eye-black-brown_scene-01.jpg" alt="Canadian Cardinal cat-eye thumbnail" style="width:260px;height:auto;border-radius:12px;display:block">
-  <div style="margin-top:8px;font-weight:600">Canadian Cardinal — Cat-Eye Black / Brown</div>
-</a>
