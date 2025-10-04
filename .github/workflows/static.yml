@@ -41,10 +41,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        git add images/products/canadian-cardinal/cat-eye-black-brown/*
-git add images/brand-logos/canadian-cardinal-mg.png
-git add products/canadian-cardinal-cat-eye-black-brown.html
-git add index.html
-git commit -m "Add Canadian Cardinal Cat-Eye (7 scenes) and product page"
-git push
-
+    
